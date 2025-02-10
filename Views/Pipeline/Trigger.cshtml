@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Trigger GitHub Pipeline";
+}
+ 
+<h2>Trigger GitHub Pipeline</h2>
+ 
+<label for="branch">Select Branch:</label>
+<select id="branch">
+    <option value="main">main</option>
+    <option value="dev">dev</option>
+</select>
+ 
+<button onclick="triggerPipeline()">Trigger Pipeline</button>
+ 
+<p id="result"></p>
+ 
+<script src="~/wwwroot/scripts.js"></script>
