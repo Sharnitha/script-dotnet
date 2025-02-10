@@ -1,0 +1,14 @@
+name: Frontend-CI
+
+on:
+  workflow_dispatch: 
+        
+jobs:   
+  set_environment:    
+    runs-on: ubuntu-latest 
+    # needs: demo 
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: listing the files
+        run: ls
